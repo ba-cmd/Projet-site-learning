@@ -1,0 +1,36 @@
+
+/* page d'erreur */
+#page-erreur{
+	width: 950px;
+	margin: auto;
+    padding-top: 100px;
+	display: flex;
+    justify-content: space-around;
+}
+
+#page-erreur h2{
+    color: blue;
+    font-size: 2.5em;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-weight: bolder;
+    padding-top: 10%;
+}
+#page-erreur p{
+	font-family: Tahoma, calibri, Arial, sans-serif;
+	font-size: 1.5em;  
+}
+
+.btn-retour{
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}
+.btn-retour a{
+    background-color: #1C5588;
+	text-decoration: none;
+	color: #fff;
+    border-radius: 15px;
+    padding: 8px 15px;
+    transition: .3s;
+    font-weight: bolder;
+    cursor: pointer;
+}

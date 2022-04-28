@@ -1,0 +1,99 @@
+
+section {
+    padding-top: 60px;
+    /* border: 5px solid black; */
+    background-color: #fff;
+  
+  }
+.c{
+   width: 250px;
+   height: 50px;
+   border-bottom: black;
+   font-weight: bold;
+   margin-bottom: 2px;
+   background: silver;
+   
+}
+.contenu-site > div > .cours-recent-consulter {
+  width: 800px;
+  margin: auto;
+  height: 200px;
+  /* border: 1px solid black; */
+  text-align: center;
+  /*justify-content: flex-start;*/
+  font-weight: bold;
+  background: #AD956B;
+  margin-bottom: 5px;
+}
+.contenu-site > .left-contenu {
+  width: 850px;
+  margin-right: 0px;
+  margin-left: 0;
+   /*border: 5px solid red; */
+  
+}
+.contenu-site > .g{
+ width: 250px;
+ background: #AD956B;
+ margin-left: 5px;
+ font-weight: bold;
+}
+.contenu-site > .bloc-forum {
+  width: 250px;
+  /* margin: auto; */
+  /* height: 800px; */
+  /* border: 3px solid royalblue; */
+  text-align: center;
+  /*justify-content: flex-start;*/
+  font-weight: bold;
+  background: #AD956B;
+  /* margin-bottom: 5px; */
+  margin-right: 6px;
+  /*justify-content: flex-end;*/
+
+}
+
+ .contenu-site {
+  /* border: 5px solid #AD956B; */
+  display: flex;
+  justify-content: space-between;
+  /* width: 90%; */
+  margin-right: 0px;
+  /* margin-left: 125px; */
+  padding: 0px;
+  margin: auto; 
+}
+
+.img-scalling {
+  width: 250px;
+  height: 150px;
+  margin: 2px;
+  /* border: 5px solid #AD956B; */
+}
+.img-scalling:hover{
+	filter: grayscale(0.3s);
+	transform: scale(1.1);
+}
+.img-tuto .titre-cours {
+  font-family: "Trebuchet MS";
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    /* width: 120%; */
+  /* border: 5px solid #AD956B; */
+  text-align: center;
+}
+.list-C {
+  display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+  /* margin-left: 10px; */
+}
+
+.error-msg {
+  border: 1px solid black;
+  /* margin-top: 15%; */
+  text-align: center;
+  width: 25%;
+}
