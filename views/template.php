@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="layout/fontawesome/css/all.css" />
     <link rel="stylesheet" href="layout/style.css">
     <link rel="stylesheet" href="views/accueil.css">
-	<link rel="stylesheet" href="layout/erreur-page.css" />
     <title><?= $t ?></title>
 </head>
 <body>

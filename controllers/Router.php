@@ -16,13 +16,13 @@ class Router {
                 $url = explode('/', filter_var($_GET['url'], FILTER_SANITIZE_URL));
                 // var_dump($url);
                 $controller = ucfirst(strtolower($url[0]));
-               // var_dump($controller);
+               var_dump($controller);
                 
                 $controllerClass = "Controller".$controller;
                 $controllerFile = "controllers/".$controllerClass.".php";
 
                 if(file_exists($controllerFile)){
-                    require_once($controllerFile);
+                    // require_once($controllerFile);
                     $this->_ctrl = new $controllerClass($url);
                 }else {
                     throw new Exception('Page introuvable');

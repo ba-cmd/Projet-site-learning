@@ -25,7 +25,7 @@ class View {
             //temporisation (mise en tampo)
             ob_start();
             // on inclut le fichier vue
-            require $file;
+           require_once $file;
             return ob_get_clean();
         }else{
             throw new Exception('Fichier '.$file.' introuvable');

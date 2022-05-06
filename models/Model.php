@@ -26,7 +26,7 @@ abstract class Model {
 	protected function getAll($table, $obj){
         // $table = 'cours';
         $var = [];
-		$req = $this->getBdd()->prepare('SELECT * FROM ' .$table. ' ORDER BY idCours desc');
+		$req = $this->getBdd()->prepare('SELECT * FROM ' .$table);
 		$req->execute();
         while($data = $req->fetch(PDO::FETCH_ASSOC)){
             $var[] = new $obj($data);
@@ -42,26 +42,26 @@ abstract class Model {
 
 	}
 
-        protected function getAl($table, $obj){
-        // $table = 'cours';
-        $var = [];
-        $req = $this->getBdd()->prepare('SELECT * FROM ' .$table. ' ORDER BY idForum desc');
-        $req->execute();
-        while($data = $req->fetch(PDO::FETCH_ASSOC)){
-            $var[] = new $obj($data);
-        }
-        // var_dump($var);
-        return $var;
-        $req->closeCursor();
+    // protected function getAl($table, $obj){
+    //     // $table = 'cours';
+    //     $var = [];
+    //     $req = $this->getBdd()->prepare('SELECT * FROM ' .$table. ' ORDER BY idForum desc');
+    //     $req->execute();
+    //     while($data = $req->fetch(PDO::FETCH_ASSOC)){
+    //         $var[] = new $obj($data);
+    //     }
+    //     // var_dump($var);
+    //     return $var;
+    //     $req->closeCursor();
 
-        // $sql = "SELECT * FROM " .$table;
-        // $req = $this->getBdd()->prepare($sql);
-        // $req->execute();
-        // var_dump($req->fetchAll());
+    //     // $sql = "SELECT * FROM " .$table;
+    //     // $req = $this->getBdd()->prepare($sql);
+    //     // $req->execute();
+    //     // var_dump($req->fetchAll());
 
-    }
+    // }
 
-    }
+}
 
 
 
