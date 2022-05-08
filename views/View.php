@@ -1,6 +1,3 @@
-
-
-
 <?php
 class View {
     private $_file;

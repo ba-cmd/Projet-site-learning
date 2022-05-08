@@ -30,13 +30,12 @@
   }
   
   body {
-    background-color: #e7e7e8;
     font-family: elephant,"Trebuchet MS", sans-serif;
   }
   
   a {
     /* color: #006dcc; */
-    font-size: 32px;
+    font-size: 30px;
     text-decoration: none;
   }
 

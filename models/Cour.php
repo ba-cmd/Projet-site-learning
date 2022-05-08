@@ -2,7 +2,7 @@
 class Cour {
     // nom des champs dans la bd
     private $_idCours;
-    private $_NomCours;
+    public $_nom;
 
     public function __construct(array $data) {
         $this->hydrate($data);
@@ -17,7 +17,6 @@ class Cour {
             }
         }
     }
-
     //setters
     public function setIdcours($id){
         $id = (int) $id;
@@ -25,17 +24,17 @@ class Cour {
             $this->_idCours = $id;
     }
 
-    public function setNomcours($nom){
-        if(is_string($nom))
-            $this->_NomCours = $nom;
+    public function setnom($noms){
+        if(is_string($noms))
+            $this->_nom = $noms;
     }
 
     //Getters
     public function id(){
         return $this->_idCours;
     }
-    public function NomCours(){
-        return $this->_NomCours;
+    public function nom(){
+        return $this->_nom;
     }
 
     

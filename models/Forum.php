@@ -2,7 +2,7 @@
 class Forum {
     // nom des champs dans la bd
     private $_idForum;
-    private $_Titre;
+    private $_titre;
 
     public function __construct(array $data) {
         $this->hydrate($data);
@@ -27,7 +27,7 @@ class Forum {
 
     public function setTitre($nom){
         if(is_string($nom))
-            $this->_Titre = $nom;
+            $this->_titre = $nom;
     }
 
     //Getters
@@ -35,7 +35,7 @@ class Forum {
         return $this->_idForum;
     }
     public function titres (){
-        return $this->_Titre;
+        return $this->_titre;
     }
 
     

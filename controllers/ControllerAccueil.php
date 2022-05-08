@@ -4,9 +4,10 @@ class ControllerAccueil {
     private $_cours;
     private $_view;
     public $_forums;
+    public $_consultes;
 
     public function __construct($url){
-        if(isset($url) && count([$url]) > 1 )
+        if(isset($url) && count([$url]) > 5 )
             throw new Exception('Page introuvable');
         else {
             $this->funcPriverCours();
@@ -18,8 +19,13 @@ class ControllerAccueil {
         $cours = $this->_cours->getCours();
         // var_dump($cours);
         $this->_forums = new Forums;
+        $this->_consultes = new Consultes;
+        $consultes=$this->_consultes->getCoursConsulte(1);
         $forums = $this->_forums->getForum();
         $forumsNotCours = $this->_forums->getF();
+    
+        
+
 
         // var_dump($forumsNotCours);
 
